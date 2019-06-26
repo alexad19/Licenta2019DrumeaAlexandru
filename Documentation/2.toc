@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}Introduction}{2}% 
+\contentsline {subsection}{\numberline {1.1}Abstract}{2}% 
+\contentsline {subsection}{\numberline {1.2}Motivation}{4}% 
+\contentsline {section}{\numberline {2}Theoretical Considerations, State-of-the-Art Technologies and Data Formats}{5}% 
+\contentsline {subsection}{\numberline {2.1}Data Formats Used in the Current Thesis}{5}% 
+\contentsline {subsection}{\numberline {2.2}Deploying Web Applications Using Python}{7}% 
+\contentsline {subsection}{\numberline {2.3}The Stanford Named Entity Recognition Software (Sutton \textit {et al}, 2015)}{8}% 
+\contentsline {subsubsection}{\numberline {2.3.1}The Conditional Random Field Algorithm, Theoretical Considerations of the Stanford Software}{8}% 
+\contentsline {subsubsection}{\numberline {2.3.2}The Operation of the Stanford Named Entity Recognition Software}{9}% 
+\contentsline {subsection}{\numberline {2.4}The SpaCy Entity Recognition Module}{9}% 
+\contentsline {subsection}{\numberline {2.5}The Theoretical Foundations of the Gazetteer Method in Named Entity Recognition}{11}% 
+\contentsline {subsubsection}{\numberline {2.5.1}The Brute Force Method}{11}% 
+\contentsline {subsubsection}{\numberline {2.5.2}Improving the Brute Force Method}{11}% 
+\contentsline {subsection}{\numberline {2.6}State-of-the-Art Methods with Respect to The Romanian Language}{12}% 
+\contentsline {section}{\numberline {3}The Romanian Named Entity Recognition Software}{12}% 
+\contentsline {subsection}{\numberline {3.1}Data Preprocessing}{13}% 
+\contentsline {subsection}{\numberline {3.2}Stanford Named Entity Recognition Method}{15}% 
+\contentsline {subsection}{\numberline {3.3}The Practical Application of the Gazetteer Method}{19}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Creation of the List of Entities}{19}% 
+\contentsline {subsubsection}{\numberline {3.3.2}The Operation of the Gazetteer Method}{20}% 
+\contentsline {subsection}{\numberline {3.4}SpaCy Named Entity Recogniser}{22}% 
+\contentsline {subsection}{\numberline {3.5}Statistics}{22}% 
+\contentsline {subsection}{\numberline {3.6}The Voting Function}{26}% 
+\contentsline {subsection}{\numberline {3.7}The Web Application}{28}% 
+\contentsline {section}{\numberline {4}Conclusions}{30}% 
+\contentsline {section}{\numberline {5}Bibliography}{32}% 
