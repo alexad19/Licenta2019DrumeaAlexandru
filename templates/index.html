@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Romanian Language NER</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+	
+	<script src="{{ url_for('static', filename='css/navbar.js') }}"></script>
+    
+    <html lang="en-US">
+
+</head>
+
+<body>	
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <div id="navbar">
+		
+		<map name="navbarmap">
+		  <area shape="rect" coords="750, 34, 887, 50" href="stats.html" alt="Sun">
+		</map>
+			
+        <img src="{{ menu_img }}" style="width:100%;" usemap="#navbarmap">
+    </div>
+
+    <div class="content">
+        <header>
+            <img src="{{ index_img }}" style="width:100%;">
+			
+			
+        </header>
+
+        <!-- Here is our page's main content -->
+
+        <main>
+            <article>
+				<div class="container">
+					<img src="{{ sect1_img }}" class = "please">
+					
+					<form id="target" method="GET">
+						<input type="text" name="sentence" id="sentance"><br>
+						<input type="image" src = "{{ submit_img }}" class="buton">
+					</form>
+					<br>
+					<p>Legend of colours: <span style="color:red;">PERSON</span>,  <span style="color: blue;">GPE</span>, <span style="color: green;">ORGANIZATION</span>, <span style="color: pink;">MISC</span></p>
+					<br>
+				</div>
+				
+				<div class="rasp">
+					{{ data | safe}}
+				</div>
+            </article>
+        </main>
+
+        
+	</div>
+	
+	<img src="{{ footer_img }}" style="width:100%">
+</body>
+</html>
