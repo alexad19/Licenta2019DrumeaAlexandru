@@ -1,0 +1,138 @@
+/* || General setup */
+
+html {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 10px;
+  background-color: #E8E8E8;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* || typography */
+header{
+    position: relative;
+    text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: "Alfa Slab One", "Blender","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+#sentance {
+	margin-left: 60px;
+    width: 80%;
+    height: 20px;
+}
+
+.please{
+    margin-left: 58px;
+    margin-top: 20px;
+}
+
+.rasp{
+	float: left;
+	width: 50%;
+}
+
+.description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.buton{
+	margin-top: 20px;
+    margin-left: 466px;
+}
+
+h1 {
+    color: #8EAEBD;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+}
+
+header p{
+    color: #8EAEBD;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  color: #0F1626;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+header video{
+  width: 100%;
+  opacity: 0.8;
+}
+
+article, aside {
+  background-color: white;
+  padding: 0%;
+}
+
+/* || main layout */
+
+main {
+  box-shadow: 0px 2px 10px rgb(97, 97, 97);
+  display: flex;
+}
+
+article {
+  flex: 4;
+  float :center;
+}
+
+.container {
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+article p{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
+}
+
+footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1000px)
+{
+  body{
+    font-size: 100px;
+  }
+.button{
+    
+    width:10%;
+    height:10%;
+  }
+
+
+}
+
