@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Romanian Language NER</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stats.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+	
+	<script src="{{ url_for('static', filename='css/navbar.js') }}"></script>
+    
+    <html lang="en-US">
+
+</head>
+
+<body>	
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <div id="navbar">
+		
+		<map name="navbarmap">
+		  <area shape="rect" coords="952, 34, 1035, 50" href="/">
+		</map>
+			
+        <img src="{{ menu_img }}" style="width:100%;" usemap="#navbarmap">
+    </div>
+
+    <div class="content">
+        <header>
+            <img src="{{ graph1_img }}" style="width:100%;">
+			
+			
+        </header>
+
+	<img src="{{ footer_img }}" style="width:100%">
+</body>
+</html>
