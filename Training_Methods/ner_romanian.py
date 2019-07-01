@@ -26,6 +26,6 @@ def run(sentence):
             
 
 
-sentence = u"Tudor Arghezi, pseudonimul lui Ion Nae Theodorescu, Academia Romana, nascut la 21 mai 1880, a decedat in 14 iulie 1967 a fost un scriitor roman, cunoscut pentru contributia sa la dezvoltarea liricii romanesti sub influenta baudelairianismului."
+sentence = u"S-a născut la Tulcea pe 10 ianuarie 1906. Străbunicul său Grigore Moisil (1814-1891), a fost paroh la Năsăud și vicar episcopal greco-catolic pentru ținutul Rodnei, unul din întemeietorii primului liceu românesc din Năsăud. Tatăl său, Constantin Moisil (1867-1958), a fost profesor de istorie, arheolog, numismat, directorul Cabinetului Numismatic al Academiei și membru al acestei Academii. Mama sa, Elena (1863-1949) a fost institutoare la Tulcea, apoi directoarea școlii „Maidanul Dulapului”, azi Școala Nr. 74 „Ienăchiță Văcărescu” din București."
 
-# print (run(sentence))
+print (run("Alex prezinta licenta."))

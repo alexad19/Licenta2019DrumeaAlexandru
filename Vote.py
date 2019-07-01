@@ -46,17 +46,33 @@ def vote(sentence):
     
 
     for data in trained:
-        result.append(data)
+        coefs = [0.42, 0.32, 0.25] #according to each method's F-measure score
+        score = 0.42
+        coefs.remove(0.42)
+        if data in gazetteer and data not in result:
+            score += 0.32
+            coefs.remove(0.32)
+        if data in spacy and data not in result:
+            score += 0.25
+            coefs.remove(0.25)
+        if score > sum(coefs):
+            result.append(data)
+    
     for data in gazetteer:
         coefs = [0.42, 0.32, 0.25] #according to each method's F-measure score
         score = 0.32
         coefs.remove(0.32)
+        # print(data)
         if data in trained and data not in result:
             score += 0.42
             coefs.remove(0.42)
         if data in spacy and data not in result:
+            # print(data)
             score += 0.25
+            coefs.remove(0.25)
+            # print(score)
         if score > sum(coefs):
+            # print(data)
             result.append(data)
 
     for data in spacy:
@@ -66,8 +82,9 @@ def vote(sentence):
         if data in trained and data not in result:
             score += 0.42
             coefs.remove(0.42)
-        if data in spacy and data not in result:
+        if data in gazetteer and data not in result:
             score += 0.32
+            coefs.remove(0.32)
         if score > sum(coefs):
             result.append(data)
     
@@ -75,4 +92,6 @@ def vote(sentence):
     return beautify(sentence, result)
     #return "<span style=\"color: red\">Tudor Arghezi</span>, pseudonimul lui Ion Nae Theodorescu, Academia Romana, nascut la 21 mai 1880, Bucuresti decedat in 14 iulie 1967 a fost un scriitor român, cunoscut pentru contribuția sa la dezvoltarea liricii românești sub influența baudelairianismului. Opera sa poetică, de o originalitate exemplară, reprezintă o altă vârstă marcantă a literaturii române. A scris, între altele, teatru, proză (notabile fiind romanele Cimitirul Buna Vestire și Ochii Maicii Domnului), pamflete, precum și literatură pentru copii. A fost printre autorii cei mai contestați din întreaga literatură română."
 
-#print(vote("Tudor Arghezi, pseudonimul lui Ion Nae Theodorescu, nascut la 21 mai 1880, Bucuresti decedat in 14 iulie 1967 a fost un scriitor român, cunoscut pentru contribuția sa la dezvoltarea liricii românești sub influența baudelairianismului. Opera sa poetică, de o originalitate exemplară, reprezintă o altă vârstă marcantă a literaturii române. A scris, între altele, teatru, proză (notabile fiind romanele Cimitirul Buna Vestire și Ochii Maicii Domnului), pamflete, precum și literatură pentru copii. A fost printre autorii cei mai contestați din întreaga literatură română."))
+#print(vote("S-a născut la Tulcea pe 10 ianuarie 1906. Străbunicul său Grigore Moisil (1814-1891), a fost paroh la Năsăud și vicar episcopal greco-catolic pentru ținutul Rodnei, unul din întemeietorii primului liceu românesc din Năsăud. Tatăl său, Constantin Moisil (1867-1958), a fost profesor de istorie, arheolog, numismat, directorul Cabinetului Numismatic al Academiei și membru al acestei Academii. Mama sa, Elena (1863-1949) a fost institutoare la Tulcea, apoi directoarea școlii „Maidanul Dulapului”, azi Școala Nr. 74 „Ienăchiță Văcărescu” din București."))
+
+print(vote("Alex prezinta licenta."))

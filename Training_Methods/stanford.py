@@ -39,9 +39,11 @@ def runGazeteer(sentence):
     pos_tagged = extract_pos(sent)
     ner_list = []
     # print ("Arghezi" in person)
+    # print(pos_tagged)
     
     for word in pos_tagged:
         if word[1] == 'NOUN' or word[1] == 'PROPN':
+            # print(word[0])
             if word[0] in person:
                 ner_list.append((word[0], "PERSON"))
             elif word[0] in gpe:
@@ -54,5 +56,5 @@ def runGazeteer(sentence):
     return ner_list
 
 
-doc = "Tudor Arghezi, pseudonimul lui Ion Nae Theodorescu, Academia Romana, nascut la 21 mai 1880, Bucuresti decedat in 14 iulie 1967 a fost un scriitor român, cunoscut pentru contribuția sa la dezvoltarea liricii românești sub influența baudelairianismului. Opera sa poetică, de o originalitate exemplară, reprezintă o altă vârstă marcantă a literaturii române. A scris, între altele, teatru, proză (notabile fiind romanele Cimitirul Buna Vestire și Ochii Maicii Domnului), pamflete, precum și literatură pentru copii. A fost printre autorii cei mai contestați din întreaga literatură română."
-#print(runGazeteer(doc))
+doc = "S-a născut la Tulcea pe 10 ianuarie 1906. Străbunicul său Grigore Moisil (1814-1891), a fost paroh la Năsăud și vicar episcopal greco-catolic pentru ținutul Rodnei, unul din întemeietorii primului liceu românesc din Năsăud. Tatăl său, Constantin Moisil (1867-1958), a fost profesor de istorie, arheolog, numismat, directorul Cabinetului Numismatic al Academiei și membru al acestei Academii. Mama sa, Elena (1863-1949) a fost institutoare la Tulcea, apoi directoarea școlii „Maidanul Dulapului”, azi Școala Nr. 74 „Ienăchiță Văcărescu” din București."
+#print(runGazeteer("Alex prezinta licenta."))
